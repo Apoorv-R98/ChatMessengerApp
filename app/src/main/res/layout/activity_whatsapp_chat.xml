@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2979FF"
+    android:orientation="vertical"
+    tools:context=".WhatsappChatActivity">
+
+    <ListView
+        android:id="@+id/chatListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="#5F96F5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#5F96F5"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtSend"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_weight="2"
+            android:background="#FFEA00"
+            android:ems="10"
+            android:hint="Type Something Here..."
+            android:inputType="textPersonName"
+            android:textColorHint="#FF1744" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="0dp"
+            android:layout_height="49dp"
+            android:layout_weight="1"
+            android:background="#1CC923"
+            android:text="Send Message"
+            android:textColor="#130303" />
+    </LinearLayout>
+
+</LinearLayout>
